@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DeliciousApp</display-name>
+  <welcome-file-list>
+    <welcome-file>registe.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Mapping for Register Servlet -->
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<servlet-class>com.Websites.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Mapping for Login Servlet -->
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.Websites.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Mapping for GetProducts Servlet -->
+  <servlet>
+  	<servlet-name>GetProducts</servlet-name>
+  	<servlet-class>com.Delicious.Controler.GetProducts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetProducts</servlet-name>
+  	<url-pattern>/GetProducts</url-pattern>
+  </servlet-mapping>
+
+  <!-- Mapping for Menu Servlet -->
+
+
+</web-app>
